@@ -1,19 +1,39 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./style.css";
-import { ROUTES } from "../../Utils/constants";
+import logo from "../../assets/images/logo.png";
+import LoginIcon from "@mui/icons-material/Login";
 
-const Navbar: React.FC = () => {
+
+const Navbar = () => {
   return (
     <nav className="navbar">
-      <ul>
-        <li><Link to={ROUTES.HOME}>Home</Link></li>
-        <li><Link to={ROUTES.ABOUT}>About</Link></li>
-        <li><Link to={ROUTES.SERVICES}>Services</Link></li>
-        <li><Link to={ROUTES.BLOG}>Blog</Link></li>
-        <li><Link to={ROUTES.PRICING}>Pricing</Link></li>
-        <li><Link to={ROUTES.CONTACT}>Contact</Link></li>
+      {/* Logo */}
+      <img src={logo} alt="Logo" className="navbar-logo" />
+
+      {/* Navigation Links */}
+      <ul className="navbar-links">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Blog</li>
+        <li>Pricing</li>
+        <li>Contact</li>
       </ul>
+
+      {/* Right Section (My List + Sign In Button) */}
+      <div className="navbar-right">
+        {/* Green Circular Number Indicator */}
+        <div className="my-list-container">
+          <span className="circle-number">2</span>
+          <span className="my-list-text">My List</span>
+        </div>
+
+        {/* Sign In Button */}
+        <button className="signin-btn">
+          <LoginIcon className="signin-icon" />
+          Sign In
+        </button>
+      </div>
     </nav>
   );
 };

@@ -1,20 +1,93 @@
 .navbar {
-  background-color: #333;
-  padding: 1rem;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 35px;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  margin-left: 3rem;
+  margin-right: 3rem;
+  
 }
 
-.navbar ul {
+/* Logo */
+.navbar-logo {
+  height: 55px;
+  width: auto;
+}
+
+/* Navigation Links */
+.navbar-links {
   list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
   padding: 0;
 }
 
-.navbar li {
-  display: inline;
-  margin: 0 15px;
+.navbar-links li {
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
 }
 
-.navbar a {
+.navbar-links li:hover {
+  color: #27ae60; /* Changed hover color */
+}
+
+/* Right Section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* My List Container */
+.my-list-container {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.circle-number {
+  background-color: #27ae60; /* Changed to your color */
   color: white;
-  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.my-list-text {
+  font-size: 18px;
+}
+
+/* Sign In Button */
+.signin-btn {
+  background-color: #27ae60; /* Updated button color */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Changed to match your button */
+  padding: 17px 30px; /* Updated padding */
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700; /* Made font bold */
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.signin-btn:hover {
+  background-color: white;
+  color: #27ae60; /* Changed text color on hover */
+  border: 1px solid #27ae60; /* Added border on hover */
+}
+
+.signin-icon {
+  font-size: 22px;
+  margin-right: 7px;
 }
