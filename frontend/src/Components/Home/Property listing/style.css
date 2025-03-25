@@ -1,0 +1,172 @@
+.property-listing {
+  padding: 40px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 per row */
+  grid-template-rows: repeat(2, auto); /* Always 2 rows */
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.property-card {
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  width: 100%; /* ✅ Ensures uniform size inside grid */
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 0;
+  position: relative;
+}
+
+.property-card:hover {
+  transform: scale(1.05);
+}
+
+.property-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.property-header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.for-rent {
+  background: #ff6b6b;
+  color: white;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.favorite-icon {
+  color: #ff6b6b;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.property-details {
+  text-align: left;
+  padding: 15px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.property-details h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.property-location {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.location-icon {
+  color: #ff6b6b;
+  margin-right: 5px;
+}
+
+.thin-divider {
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0;
+}
+
+.property-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+}
+
+.price-btn {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.sqft-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 5px;
+}
+
+.property-type {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* ✅ Keep 3x2 layout on all screen sizes */
+@media (max-width: 900px) {
+  .property-grid {
+    grid-template-columns: repeat(3, 1fr); /* Still 3 per row */
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+@media (max-width: 600px) {
+  .property-grid {
+    grid-template-columns: repeat(3, 1fr); /* Keep 3 per row */
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+  }
+}
+
+  .property-card {
+    height: 450px; /* ✅ Reduce height slightly for better fit */
+  }
+
+  .property-image {
+    height: 200px; /* ✅ Adjust image height for mobile */
+  }
+
+  .property-details h3 {
+    font-size: 18px; /* ✅ Slightly smaller title for mobile */
+  }
+
+  .price-btn {
+    padding: 12px 18px; /* ✅ Slightly smaller button */
+    font-size: 18px;
+  }
+

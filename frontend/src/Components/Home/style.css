@@ -1,14 +1,14 @@
-/* Home Container */
+/* ===================== HOME PAGE STYLES ===================== */
+
+/* === Home Container === */
 .home-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
   width: 100%;
-  
 }
 
-/* Banner Section */
+/* ===================== BANNER SECTION ===================== */
 .banner-section {
   position: relative;
   width: 100%;
@@ -51,19 +51,19 @@
   font-size: 1.2rem;
 }
 
-/* White Search Box */
+/* ===================== SEARCH CONTAINER ===================== */
 .search-container {
   background: white;
   padding: 15px 25px;
   border-radius: 12px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 85%;
   max-width: 1000px;
   height: 80px;
+  margin-top: 40px;
 }
 
 /* Input Group */
@@ -76,27 +76,27 @@
 
 /* Labels Above Inputs */
 .input-group label {
-  font-size: 14px; /* Bigger labels */
+  font-size: 14px;
   margin-bottom: 5px;
-  color: #888; /* Slightly darker grey */
+  color: #888;
   font-weight: 500;
 }
 
-/* Text Field Styling */
+/* Search Input */
 .search-input {
   width: 100%;
-  color: #000; /* Dark black text inside fields */
+  color: #000;
   font-size: 14px;
 }
 
-/* Extended Grey Divider */
+/* Grey Divider */
 .divider {
   width: 1px;
   height: 100%;
   background-color: lightgray;
 }
 
-/* Advanced Filters & Search Button */
+/* Bottom Section (Filters & Button) */
 .bottom-section {
   display: flex;
   align-items: center;
@@ -106,10 +106,9 @@
 /* Advanced Filters */
 .advanced-filters {
   font-size: 18px;
-  color: #000; /* Dark black text */
+  color: #000;
   cursor: pointer;
   font-weight: 600;
-
 }
 
 .advanced-filters:hover {
@@ -127,4 +126,113 @@
 
 .search-button:hover {
   background-color: #219150 !important;
+}
+
+/* ===================== FEATURED PROPERTY SECTION ===================== */
+.featured-section {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Featured Property Title */
+.featured-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 5px;
+}
+
+/* Featured Property Subtitle */
+.featured-subtitle {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* ===================== PROPERTY TYPES SECTION ===================== */
+/* ===================== PROPERTY TYPES SECTION ===================== */
+/* ===================== PROPERTY TYPES SECTION ===================== */
+.home-property-types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Space between cards */
+  width: 100%;
+  max-width: 1200px; /* Set a fixed width for 5 cards */
+  margin: 0 auto;
+  flex-wrap: wrap; /* Prevents them from resizing */
+}
+
+/* Property Card */
+.home-property-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  width: 130px; /* Fixed size */
+  height: 200px; /* Fixed size */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  flex-shrink: 0; /* Prevent resizing */
+}
+
+/* Hover Effect */
+.home-property-card:hover {
+  transform: scale(1.05);
+}
+
+/* Icon Container */
+.home-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+
+/* Property Icon */
+.home-property-icon {
+  font-size: 40px;
+  color: black;
+}
+
+/* Property Name */
+.home-property-card h3 {
+  font-size: 0.9rem;
+  color: black;
+  text-align: center;
+  margin: 3px 0 1px;
+}
+
+/* Property Count */
+.home-property-count {
+  font-size: 0.9rem;
+  color: #777;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* ===================== RESPONSIVE DESIGN ===================== */
+@media (max-width: 768px) {
+  .property-card {
+    width: 70px;
+    height: 90px;
+  }
+
+  .property-icon {
+    font-size: 26px;
+  }
+
+  .property-card h3 {
+    font-size: 0.8rem;
+  }
+
+  .property-count {
+    font-size: 0.7rem;
+  }
 }

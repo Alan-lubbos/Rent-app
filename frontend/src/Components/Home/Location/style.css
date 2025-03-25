@@ -1,0 +1,65 @@
+.location-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.location-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.location-description {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.location-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.location-card {
+  position: relative;
+  width: 320px;
+  height: 200px;
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.location-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 11px;
+}
+
+.location-overlay {
+  position: absolute;
+  inset: 20px; /* Creates margin inside the card */
+  background: rgba(0, 0, 0, 0.234); /* Transparent black overlay */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 11px; /* Matches card border-radius */
+  padding: 10px;
+}
+
+.location-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.location-details {
+  font-size: 0.9rem;
+}

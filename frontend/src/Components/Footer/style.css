@@ -1,0 +1,249 @@
+.footer-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the footer stays at the bottom */
+}
+
+/* First Section */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(39, 174, 96);
+  color: white;
+  width: 100%;
+  height: 200px;
+  padding: 0 5%;
+  border-radius: 10px;
+ 
+}
+
+.footer-text {
+  max-width: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.footer-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.footer-text p {
+  font-size: 1.2rem;
+}
+
+.btn5 {
+  background: white;
+  color: green;
+  border: 2px solid lightgreen;
+  padding: 20px 23px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: auto;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.btn5:hover {
+  background: lightgreen;
+  color: white;
+}
+
+/* Second Section */
+.footer-bottom {
+  background-color: #1d2636;
+  color: white;
+  padding: 50px 5%; /* Use percentage padding to maintain responsiveness */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap; /* Allow wrapping for smaller devices */
+}
+
+/* Left Section */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 40%; /* Allow flexibility */
+  margin-left: 5%;
+}
+
+.footer-banner {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.footer-description {
+  color: grey;
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+/* Subscribe Form */
+.footer-subscribe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Allow the button to wrap below the text if needed */
+  justify-content: flex-start; /* Align items to the left */
+}
+
+.subscribe-btn {
+  background: #27ae60;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 17px 30px;
+  margin-top: 10px;
+  width: auto; /* Let the button size adjust based on content */
+}
+
+/* Right Section - Links */
+.footer-links {
+  display: flex;
+  gap: 50px;
+  margin-right: 5%; /* Allow flexibility */
+  flex-basis: 50%; /* Allow flexibility */
+  justify-content: flex-start; /* Align links to the left */
+}
+
+.footer-column h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-column p:hover {
+  color: lightgray;
+}
+
+/* Thin Grey Line & Copyright */
+.footer-bottom-line {
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+  margin-top: 20px;
+  margin-bottom: 10px; /* Space between the line and copyright */
+}
+
+.footer-copyright {
+  text-align: center;
+  color: grey;
+  font-size: 0.9rem;
+  margin: 0; /* Removed extra space */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .footer-text {
+    max-width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .footer-btn {
+    margin: 20px 0;
+  }
+
+  .footer-bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .footer-left,
+  .footer-links {
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer-left {
+    margin-bottom: 30px;
+  }
+
+  .footer-column p {
+    font-size: 1rem;
+  }
+  
+  .footer-subscribe {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Ensure everything is centered */
+  }
+
+  .subscribe-btn {
+    margin-top: 10px;
+    width: 80%; /* Adjust button width on mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-container {
+    padding: 10px;
+    height: auto;
+  }
+
+  .footer-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-text p {
+    font-size: 1rem;
+  }
+
+  .footer-links {
+    gap: 30px;
+  }
+
+  .footer-column h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-column p {
+    font-size: 1rem;
+  }
+
+  .footer-banner {
+    width: 80px;
+  }
+
+  .footer-subscribe {
+    gap: 5px;
+  }
+
+  .subscribe-btn {
+    padding: 10px 20px;
+    width: 100%; /* Make the subscribe button full width on small screens */
+  }
+}

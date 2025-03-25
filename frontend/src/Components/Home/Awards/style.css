@@ -1,0 +1,69 @@
+.awards-container {
+  width: 100%;
+  height: 450px;
+  background-color: #0f2a45;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 50px;
+}
+
+.awards-title {
+  font-size: 24px;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.awards-subtitle {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.awards-subtitle span {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.awards-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.award-wrapper {
+  text-align: center;
+}
+
+.award-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  text-align: center;
+  width: 60px;
+  position: relative; /* Needed for positioning */
+
+
+
+  /* Apply border-radius only to top-right and bottom-left */
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+
+.award-icon {
+  font-size: 70px; /* Increased from 100px to 120px */
+  color: white;
+}
+
+
+.award-number {
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.award-text {
+  font-size: 16px;
+  color: #bbb;
+  margin-top: 5px;
+}
