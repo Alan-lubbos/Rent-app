@@ -1,10 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import propertyReducer from "../reducers/propertySlice"; // ✅ Property slice
-import locationReducer from "../reducers/locationsSlice"
+import locationReducer from "../reducers/locationsSlice"; // ✅ Location slice
+import statusReducer from "../reducers/status"; // ✅ Import the status reducer
+
 export const store = configureStore({
   reducer: {
     properties: propertyReducer,
-    locations: locationReducer, // ✅ Added locations reducer
+    locations: locationReducer, 
+    status: statusReducer, // ✅ Add the status reducer here
   },
 });
 

@@ -1,0 +1,63 @@
+/* ===================== PROPERTY TYPES SECTION ===================== */
+.home-property-types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Space between cards */
+  width: 100%;
+  max-width: 1200px; /* Set a fixed width for 5 cards */
+  margin: 0 auto;
+  flex-wrap: wrap; /* Prevents them from resizing */
+}
+
+/* Property Card */
+.home-property-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  width: 130px; /* Fixed size */
+  height: 200px; /* Fixed size */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  flex-shrink: 0; /* Prevent resizing */
+}
+
+/* Hover Effect */
+.home-property-card:hover {
+  transform: scale(1.05);
+}
+
+/* Icon Container */
+.home-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+
+/* Property Icon */
+.home-property-icon {
+  font-size: 40px;
+  color: black;
+}
+
+/* Property Name */
+.home-property-card h3 {
+  font-size: 0.9rem;
+  color: black;
+  text-align: center;
+  margin: 3px 0 1px;
+}
+
+/* Property Count */
+.home-property-count {
+  font-size: 0.9rem;
+  color: #777;
+  font-weight: bold;
+  text-align: center;
+}

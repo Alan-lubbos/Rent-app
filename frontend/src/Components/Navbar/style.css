@@ -24,6 +24,12 @@
   margin: 0;
   padding: 0;
 }
+/* Ensure Links inherit styles */
+.navbar-links a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent (e.g., black text) */
+}
+
 
 .navbar-links li {
   cursor: pointer;

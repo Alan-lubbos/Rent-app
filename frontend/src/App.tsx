@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import Navbar from "./Components/Navbar/navbar";
 import { ROUTES } from "./Utils/constants";
 import Home from "./Components/Home/home";
@@ -9,10 +8,12 @@ import Services from "./Components/Services/services";
 import Blog from "./Components/Blog/blog";
 import Pricing from "./Components/Pricing/pricing";
 import Contact from "./Components/Contact/contact";
+import Loading from "./Components/Loading/loading";
 
 const App: React.FC = () => {
   return (
     <Router>
+      <Loading /> {/* ✅ Add Loading component here */}
       <Navbar />
       <Routes>
         <Route path={ROUTES.HOME} element={<Home />} />

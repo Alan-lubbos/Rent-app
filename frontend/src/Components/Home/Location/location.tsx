@@ -1,15 +1,21 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./style.css";
-import { AppDispatch, RootState } from "../../../State/Store/store";
+import { AppDispatch } from "../../../State/Store/store";
 import { getLocations } from "../../../State/Action/getLocations";
+import Loading from "../../Loading/loading"; 
+import { selectLocations, selectIsLoading, selectError } from "../../../State/Selectors/locationSelectors"; 
 
 const Location = () => {
-  const dispatch = useDispatch<AppDispatch>(); 
-  const { locations, loading } = useSelector((state: RootState) => state.locations); // ✅ Get locations from Redux
+  const dispatch = useDispatch<AppDispatch>();
+
+  // Use selectors for locations, loading, and error
+  const locations = useSelector(selectLocations);
+  const isLoading = useSelector(selectIsLoading);
+  const error = useSelector(selectError);
 
   useEffect(() => {
-    dispatch(getLocations()); // ✅ Fetch locations on mount
+    dispatch(getLocations()); // Fetch locations on mount
   }, [dispatch]);
 
   return (
@@ -19,9 +25,14 @@ const Location = () => {
         Discover our various locations around the world.
       </p>
 
-      {loading ? ( 
-        <p>Loading locations...</p> 
-      ) : (
+     
+      {isLoading && <Loading />}
+
+     
+      {error && <p className="error-message">Error: {error}</p>}
+
+     
+      {!isLoading && !error && (
         <div className="location-cards">
           {locations.map((loc) => (
             <div key={loc.id} className="location-card">
