@@ -1,6 +1,6 @@
 from app import app, db, Location
 
-# ✅ Insert locations inside app context
+
 with app.app_context():
     db.session.add_all([
         Location(
@@ -54,4 +54,4 @@ with app.app_context():
     ])
     db.session.commit()
 
-print("✅ 6 locations inserted successfully!")
+print(" 6 locations inserted successfully!")

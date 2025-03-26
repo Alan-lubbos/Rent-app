@@ -1,6 +1,6 @@
 from app import app, db, Property
 
-# ✅ Insert additional properties inside app context
+
 with app.app_context():
     db.session.add_all([
         Property(
@@ -30,4 +30,4 @@ with app.app_context():
     ])
     db.session.commit()
 
-print("✅ 3 more properties inserted successfully!")
+print(" 3 more properties inserted successfully!")

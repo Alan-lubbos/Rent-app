@@ -1,0 +1,45 @@
+.agency-story {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 50px 100px;
+}
+
+.text-content {
+  flex: 1;
+  text-align: left;
+}
+
+.text-content p {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background: #27ae60;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 20px 33px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #219150;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
