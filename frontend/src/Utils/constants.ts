@@ -5,4 +5,5 @@ export const ROUTES = {
   BLOG: "/blog",
   PRICING: "/pricing",
   CONTACT: "/contact",
+  PROPERTY: "/property/:id", 
 };

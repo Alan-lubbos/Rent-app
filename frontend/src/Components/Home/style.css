@@ -1,19 +1,31 @@
 /* ===================== HOME PAGE STYLES ===================== */
 
+/* === Global Fix for Overflow === */
+html, body {
+  overflow-x: hidden;  /* Prevents horizontal scrolling */
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  max-width: 100%;
+}
+
 /* === Home Container === */
 .home-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  max-width: 100vw; /* Ensures no horizontal overflow */
+  overflow-x: hidden;
 }
-
 
 /* ===================== FEATURED PROPERTY SECTION ===================== */
 .featured-section {
   width: 100%;
+  max-width: 100vw; /* Prevents overflow */
   text-align: center;
   margin-top: 50px;
+  overflow-x: hidden;
 }
 
 /* Featured Property Title */
@@ -31,14 +43,13 @@
   margin-bottom: 30px;
 }
 
-
-
-
 /* ===================== RESPONSIVE DESIGN ===================== */
 @media (max-width: 768px) {
   .property-card {
-    width: 70px;
-    height: 90px;
+    width: 100%;  /* Ensure it scales properly */
+    max-width: 120px; /* Adjust based on layout */
+    height: auto;
+    overflow-x: hidden;
   }
 
   .property-icon {

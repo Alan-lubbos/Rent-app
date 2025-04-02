@@ -1,0 +1,85 @@
+.property-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.back-button {
+  background-color: #28a745; /* Green color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #218838;
+}
+
+
+.content {
+  flex-grow: 1;
+}
+
+.property-card-detail {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+.property-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.footer {
+  padding: 20px;
+  background: #f1f1f1;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  margin-top: auto;
+}
+/* Default button styles */
+.btn5 {
+  background: white;
+  color: green;
+  border: 2px solid lightgreen;
+  padding: 20px 23px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  margin-top: 20px; /* Space between card and button */
+}
+
+/* Styles when button is clicked */
+.btn5.selected {
+  background: green;
+  color: white;
+  border: none;
+}
+
+

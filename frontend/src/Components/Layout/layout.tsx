@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../Navbar/navbar"; // Your existing navbar
 import Footer from "../Footer/footer"; // Global footer
+import Navbar from "../Navbar/navbar";
 
 
 interface LayoutProps {
@@ -10,7 +10,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="layout">
-      <Navbar />
+      <Navbar/>
       <main className="content">{children}</main>
       <Footer />
     </div>

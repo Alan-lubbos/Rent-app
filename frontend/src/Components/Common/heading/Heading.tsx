@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css"; // Import styles
+import "./style.css"; 
 
 interface HeadingProps {
   title: string;

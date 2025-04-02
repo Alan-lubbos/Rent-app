@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import PlaceIcon from "@mui/icons-material/Place";
+import { ROUTES } from "../../../Utils/constants";
 import "./style.css";
 
 interface PropertyListingCardProps {
@@ -15,13 +17,15 @@ interface PropertyListingCardProps {
 }
 
 const PropertyListingCard: React.FC<PropertyListingCardProps> = ({ property }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/property/${property.id}`); // Navigate to property details page
+  };
+
   return (
-    <div className="property-card">
-      <img
-        src={property.image_url}
-        alt={property.title}
-        className="property-image"
-      />
+    <div className="property-card" onClick={handleClick}> {/* Add onClick */}
+      <img src={property.image_url} alt={property.title} className="property-image" />
       <div className="property-header">
         <span className="for-rent">For Rent</span>
         <FavoriteIcon className="favorite-icon" />

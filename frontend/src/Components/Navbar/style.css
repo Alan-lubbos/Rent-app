@@ -7,6 +7,8 @@
   color: #000; /* Black text */
   margin-left: 3rem;
   margin-right: 3rem;
+  position: relative; /* Or 'fixed' if it's a fixed navbar */
+  z-index: 10;
   
 }
 
@@ -24,7 +26,7 @@
   margin: 0;
   padding: 0;
 }
-/* Ensure Links inherit styles */
+
 .navbar-links a {
   text-decoration: none; /* Remove underline */
   color: inherit; /* Inherit color from parent (e.g., black text) */

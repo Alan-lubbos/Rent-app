@@ -1,13 +1,13 @@
 import React from "react";
 import img from "../../assets/images/banner.png"; 
-import "./style.css"; // The styles for this page
+import "./style.css"; 
 import Back from "../Common/back/Back";
 
 const Contact: React.FC = () => {
   return (
     <>
       <section className="contact mb">
-        {/* Back component with name, title, and background image */}
+       
         <Back name="Contact Us" title="Get Help & Friendly Support" cover={img} />
         
         <div className="container">
@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
               <input type="text" placeholder="Email" />
             </div>
             <input type="text" placeholder="Subject" />
-            {/* Update cols and rows to be numbers */}
+            
             <textarea cols={30} rows={10} placeholder="Message"></textarea>
             <button type="submit">Submit Request</button>
           </form>

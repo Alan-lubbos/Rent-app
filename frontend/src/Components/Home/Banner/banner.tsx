@@ -2,10 +2,9 @@ import React from "react";
 import "./style.css"; 
 import banner from "../../../assets/images/banner.png";
 
-import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import SearchIcon from "@mui/icons-material/Search";
-
+import CustomTextField from "./CustomField/customtextfield";
 const Banner: React.FC = () => {
   return (
     <div className="banner-section">
@@ -18,33 +17,24 @@ const Banner: React.FC = () => {
 
         <div className="search-container">
           <div className="input-group">
-            <label>City/Street</label>
-            <TextField
-              variant="outlined"
-              fullWidth
-              className="search-input"
+            <CustomTextField
+              label="City/Street"
               placeholder="Enter city or street"
             />
           </div>
           <div className="divider"></div>
 
           <div className="input-group">
-            <label>Property Type</label>
-            <TextField
-              variant="outlined"
-              fullWidth
-              className="search-input"
+            <CustomTextField
+              label="Property Type"
               placeholder="Enter property type"
             />
           </div>
           <div className="divider"></div>
 
           <div className="input-group">
-            <label>Price Range</label>
-            <TextField
-              variant="outlined"
-              fullWidth
-              className="search-input"
+            <CustomTextField
+              label="Price Range"
               placeholder="Enter price range"
             />
           </div>

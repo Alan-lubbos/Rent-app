@@ -17,7 +17,7 @@ const AgencyStory: React.FC = () => {
         <button className="btn">More About Us</button>
       </div>
       <div className="image-content">
-        <img src={banner} alt="Agency Story" /> {/* Use the imported image here */}
+        <img src={banner} alt="Agency Story" /> 
       </div>
     </section>
   );

@@ -16,8 +16,8 @@ import { selectLoading } from "../../State/Selectors/homeSelectors";
 
 const Home = () => {
   const dispatch = useDispatch<AppDispatch>();
-  const propertyTypes = useSelector(selectPropertyTypes); // Use selector
-  const loading = useSelector(selectLoading); // Use selector
+  const propertyTypes = useSelector(selectPropertyTypes); 
+  const loading = useSelector(selectLoading); 
 
   useEffect(() => {
     dispatch(getPropertyTypes());
